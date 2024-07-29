@@ -1,0 +1,332 @@
+/* Mengatur margin dan font untuk seluruh elemen */
+* {
+    margin: 0; /* Mengatur margin semua elemen ke nol */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Mengatur font keluarga */
+}
+
+/* Mengatur background warna untuk body dan mencegah scroll horizontal */
+body {
+    background-color: #191f26; /* Mengatur warna background */
+    overflow-x: hidden; /* Agar halaman web tidak bisa digeser ke samping */
+}
+
+/* Mengatur tampilan untuk elemen navigasi */
+nav {
+    width: 100%; /* Mengatur lebar navigasi agar penuh */
+    padding-top: 20px; /* Mengatur celah atas */
+    padding-bottom: 20px; /* Mengatur celah bawah */
+    background-color: #101418; /* Mengatur warna background */
+    display: flex; /* Mengatur elemen agar sejajar */
+    justify-content: space-around; /* Mengatur elemen rata kanan kiri */
+    align-items: center; /* Mengatur elemen agar vertikal rata tengah */
+    position: fixed; /* Posisi tetap saat di-scroll */
+    z-index: 9999; /* Prioritas tinggi agar berada di depan elemen lain */
+}
+
+/* Mengatur tampilan untuk tautan navigasi */
+.link {
+    display: flex; /* Mengatur elemen agar sejajar */
+    font-weight: bold; /* Mengatur ketebalan font */
+    gap: 50px; /* Menambahkan jarak antar elemen */
+}
+
+/* Mengatur tampilan untuk elemen <a> */
+a {
+    color: white; /* Mengatur warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* Mengatur tampilan untuk heading */
+h1 {
+    color: white; /* Mengatur warna teks */
+    font-size: 35px; /* Mengatur ukuran font */
+}
+
+/* Mengatur warna teks khusus untuk kelas fauzan */
+.Anwar {
+    color: #1980ff; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk elemen dengan kelas home */
+.home {
+    padding-left: 140px; /* Mengatur padding kiri */
+    padding-right: 200px; /* Mengatur padding kanan */
+    padding-top: 150px; /* Mengatur padding atas */
+    padding-bottom: 120px; /* Mengatur padding bawah */
+    display: flex; /* Mengatur elemen agar sejajar */
+    gap: 60px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan untuk elemen kolom teks */
+.kolom-text {
+    display: flex; /* Mengatur elemen agar sejajar */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    gap: 30px; /* Mengatur jarak antar elemen */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk elemen dengan kelas lets */
+.lets {
+    width: min-content; /* Meminimalkan lebar elemen */
+    background-color: #1980ff; /* Mengatur warna background */
+    padding-left: 30px; /* Mengatur padding kiri */
+    padding-right: 30px; /* Mengatur padding kanan */
+    padding-top: 15px; /* Mengatur padding atas */
+    padding-bottom: 15px; /* Mengatur padding bawah */
+    color: white; /* Mengatur warna teks */
+    border-radius: 5px; /* Mengatur border agar melengkung */
+    white-space: nowrap; /* Untuk mensejajarkan teks */
+    border: none; /* Menghilangkan border */
+}
+
+/* Mengatur tampilan untuk elemen foto */
+.foto {
+    width: 375px; /* Mengatur lebar elemen */
+    height: 375px; /* Mengatur tinggi elemen */
+    border-radius: 100%; /* Mengatur border agar melingkar */
+    overflow: hidden; /* Untuk memotong gambar agar bulat */
+    flex-shrink: 0; /* Untuk mempertahankan ukuran elemen */
+    box-shadow: 0px 10px 30px grey; /* Mengatur bayangan elemen */
+    /* 
+    value pertama : ukuran bayangan horizontal 
+    value kedua : ukuran bayangan vertikal 
+    value ketiga : mengatur blur bayangan  
+    value empat : warna bayangan
+    */
+}
+
+/* Mengatur tampilan untuk elemen dengan kelas foto-profil */
+.foto-profil {
+    width: 375px; /* Mengatur lebar elemen */
+    height: 375px; /* Mengatur tinggi elemen */
+    object-fit: cover; /* Untuk mencocokkan foto agar sesuai dengan ukuran elemen */
+}
+
+/* Mengatur tampilan untuk elemen icon */
+.icon {
+    display: flex; /* Mengatur elemen agar sejajar */
+    gap: 15px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan untuk elemen tombol icon */
+.icon-button {
+    width: 50px; /* Mengatur lebar elemen */
+    height: 50px; /* Mengatur tinggi elemen */
+    border-radius: 100%; /* Mengatur border agar melingkar */
+    background: #1980ff; /* Mengatur warna background */
+    color: white; /* Mengatur warna teks */
+    border: none; /* Menghilangkan border */
+}
+
+/* Mengatur tampilan untuk elemen about */
+.about {
+    background-color: #272a36; /* Mengatur warna background */
+    min-height: 100vh; /* Mengatur tinggi minimal agar penuh */
+    display: flex; /* Mengatur elemen agar sejajar */
+    gap: 100px; /* Mengatur jarak antar elemen */
+    justify-content: center; /* Mengatur elemen agar ketengah (horizontal) */
+    align-items: center; /* Mengatur elemen agar ketengah (vertikal) */
+}
+
+/* Mengatur tampilan untuk elemen foto kedua */
+.foto2 {
+    width: 375px; /* Mengatur lebar elemen */
+    height: 375px; /* Mengatur tinggi elemen */
+    border-radius: 100%; /* Mengatur border agar melingkar */
+    overflow: hidden; /* Untuk memotong gambar agar bulat */
+    flex-shrink: 0; /* Untuk mempertahankan ukuran elemen */
+    border: #1980ff 5px solid; /* Mengatur border elemen */
+    /* 
+        value pertama : warna garis
+        value kedua : ketebalan garis
+        value ketiga : type garis (solid, dashed, dotted)
+    */
+}
+
+/* Mengatur tampilan untuk elemen dengan kelas aboutme */
+.aboutme {
+    width: 40%; /* Mengatur lebar elemen */
+    display: flex; /* Mengatur elemen agar sejajar */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    gap: 15px; /* Mengatur jarak antar elemen */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk elemen dengan kelas skills */
+.skills {
+    height: 70vh; /* Mengatur tinggi elemen */
+    display: flex; /* Mengatur elemen agar sejajar */
+    justify-content: center; /* Mengatur elemen agar ketengah (horizontal) */
+    align-items: center; /* Mengatur elemen agar ketengah (vertikal) */
+    gap: 50px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan untuk elemen teks skill */
+.skill-text {
+    width: 50%; /* Mengatur lebar elemen */
+    display: flex; /* Mengatur elemen agar sejajar */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    gap: 15px; /* Mengatur jarak antar elemen */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk daftar skill */
+.skill-list {
+    display: flex; /* Mengatur elemen agar sejajar */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    gap: 10px; /* Mengatur jarak antar elemen */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk elemen service */
+.service {
+    display: flex; /* Mengatur elemen agar sejajar */
+    background: #272a36; /* Mengatur warna background */
+    min-height: 100vh; /* Mengatur tinggi minimal agar penuh */
+    padding: 50px; /* Mengatur padding */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    align-items: center; /* Mengatur elemen agar ketengah (horizontal) */
+    justify-content: center; /* Mengatur elemen agar ketengah (vertikal) */
+    gap: 50px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan untuk teks service */
+.service-text {
+    text-align: center; /* Mengatur teks agar ketengah */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk kartu service */
+.cards {
+    display: flex; /* Mengatur elemen agar sejajar */
+    justify-content: center; /* Mengatur elemen agar ketengah (horizontal) */
+    gap: 50px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan untuk elemen dengan kelas card */
+.card {
+    display: flex; /* Mengatur elemen agar sejajar */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    justify-content: center; /* Mengatur elemen agar ketengah (horizontal) */
+    align-items: center; /* Mengatur elemen agar ketengah (vertikal) */
+    padding: 20px; /* Mengatur padding */
+    width: 275px; /* Mengatur lebar elemen */
+    height: 400px; /* Mengatur tinggi elemen */
+    border-radius: 5%; /* Mengatur border agar melengkung */
+    background: #191f26; /* Mengatur warna background */
+    border: none; /* Menghilangkan border */
+    color: white; /* Mengatur warna teks */
+    gap: 20px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan hover untuk kartu */
+.card:hover {
+    border: #1980ff 1px solid; /* Mengatur border saat hover */
+}
+
+/* Mengatur tampilan teks di dalam kartu */
+.card p {
+    text-align: center; /* Mengatur teks agar ketengah */
+}
+
+/* Mengatur tampilan icon service */
+.icon-service {
+    scale: 3; /* Mengatur ukuran icon */
+    color: #1980ff; /* Mengatur warna icon */
+    padding-bottom: 5px; /* Mengatur padding bawah */
+}
+
+/* Mengatur tampilan untuk elemen projects */
+.projects {
+    display: flex; /* Mengatur elemen agar sejajar */
+    min-height: 100vh; /* Mengatur tinggi minimal agar penuh */
+    padding: 100px; /* Mengatur padding */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    align-items: center; /* Mengatur elemen agar ketengah (horizontal) */
+    justify-content: center; /* Mengatur elemen agar ketengah (vertikal) */
+    gap: 50px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan teks untuk projects */
+.projects-text {
+    text-align: center; /* Mengatur teks agar ketengah */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan untuk kartu project */
+.project {
+    display: flex; /* Mengatur elemen agar sejajar */
+    justify-content: center; /* Mengatur elemen agar ketengah (horizontal) */
+    flex-wrap: wrap; /* Mengatur elemen agar wrap */
+    gap: 40px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan kartu project */
+.project-card {
+    width: 300px; /* Mengatur lebar elemen */
+    height: 175px; /* Mengatur tinggi elemen */
+    border-radius: 20px; /* Mengatur border agar melengkung */
+    overflow: hidden; /* Mengatur elemen agar memotong elemen anak */
+}
+
+/* Mengatur tampilan gambar dalam project */
+.foto-project {
+    width: 300px; /* Mengatur lebar elemen */
+    height: 175px; /* Mengatur tinggi elemen */
+    object-fit: cover; /* Untuk mencocokkan gambar agar sesuai dengan ukuran elemen */
+}
+
+/* Mengatur tampilan untuk elemen contact */
+.contact {
+    display: flex; /* Mengatur elemen agar sejajar */
+    background: #272a36; /* Mengatur warna background */
+    min-height: 100vh; /* Mengatur tinggi minimal agar penuh */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    align-items: center; /* Mengatur elemen agar ketengah (horizontal) */
+    justify-content: center; /* Mengatur elemen agar ketengah (vertikal) */
+    gap: 50px; /* Mengatur jarak antar elemen */
+    padding: 100px 0 100px 0; /* Mengatur padding */
+}
+
+/* Mengatur tampilan input dalam contact */
+.input {
+    display: flex; /* Mengatur elemen agar sejajar */
+    width: 100%; /* Mengatur lebar elemen agar penuh */
+    gap: 20px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan field contact */
+.contact-field {
+    display: flex; /* Mengatur elemen agar sejajar */
+    width: 40%; /* Mengatur lebar elemen */
+    flex-direction: column; /* Mengatur elemen agar ke bawah */
+    align-items: center; /* Mengatur elemen agar ketengah (horizontal) */
+    gap: 20px; /* Mengatur jarak antar elemen */
+}
+
+/* Mengatur tampilan teks contact */
+.contact-text {
+    text-align: center; /* Mengatur teks agar ketengah */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Mengatur tampilan input dan textarea */
+input, textarea {
+    padding: 15px; /* Mengatur padding */
+    background: #191f26; /* Mengatur warna background */
+    border: none; /* Menghilangkan border */
+    color: white; /* Mengatur warna teks */
+    border-radius: 10px; /* Mengatur border agar melengkung */
+    width: 100%; /* Mengatur lebar elemen agar penuh */
+    font-size: 17px; /* Mengatur ukuran font */
+}
+
+/* Mengatur tampilan untuk elemen footer */
+footer {
+    display: flex; /* Mengatur elemen agar sejajar */
+    justify-content: space-around; /* Mengatur elemen agar rata kanan kiri */
+    align-items: center; /* Mengatur elemen agar vertikal rata tengah */
+    padding-bottom: 50px; /* Mengatur padding bawah */
+    padding-top: 50px; /* Mengatur padding atas */
+    color: white; /* Mengatur warna teks */
+}
